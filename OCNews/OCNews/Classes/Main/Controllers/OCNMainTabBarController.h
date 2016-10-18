@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  OCNMainTabBarController.h
 //  OCNews
 //
 //  Created by 吕成翘 on 16/10/18.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
 
+@interface OCNMainTabBarController : UITabBarController
 
 @end
-
