@@ -13,6 +13,10 @@
 		495DA8711DB67BC6000683C0 /* OCNMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495DA86B1DB67BC6000683C0 /* OCNMainNavigationController.m */; };
 		495DA8721DB67BC6000683C0 /* OCNMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495DA86D1DB67BC6000683C0 /* OCNMainTabBarController.m */; };
 		495DA8731DB67BC6000683C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 495DA8701DB67BC6000683C0 /* AppDelegate.m */; };
+		495DA87A1DB67DE2000683C0 /* OCNNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495DA8791DB67DE2000683C0 /* OCNNewsViewController.m */; };
+		495DA87D1DB67DEF000683C0 /* OCNMediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495DA87C1DB67DEF000683C0 /* OCNMediaViewController.m */; };
+		495DA8801DB67DF7000683C0 /* OCNBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495DA87F1DB67DF7000683C0 /* OCNBarViewController.m */; };
+		495DA8851DB67E46000683C0 /* OCNMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495DA8841DB67E46000683C0 /* OCNMeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,14 @@
 		495DA86D1DB67BC6000683C0 /* OCNMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCNMainTabBarController.m; sourceTree = "<group>"; };
 		495DA86F1DB67BC6000683C0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		495DA8701DB67BC6000683C0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		495DA8781DB67DE2000683C0 /* OCNNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCNNewsViewController.h; sourceTree = "<group>"; };
+		495DA8791DB67DE2000683C0 /* OCNNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCNNewsViewController.m; sourceTree = "<group>"; };
+		495DA87B1DB67DEF000683C0 /* OCNMediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCNMediaViewController.h; sourceTree = "<group>"; };
+		495DA87C1DB67DEF000683C0 /* OCNMediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCNMediaViewController.m; sourceTree = "<group>"; };
+		495DA87E1DB67DF7000683C0 /* OCNBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCNBarViewController.h; sourceTree = "<group>"; };
+		495DA87F1DB67DF7000683C0 /* OCNBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCNBarViewController.m; sourceTree = "<group>"; };
+		495DA8831DB67E46000683C0 /* OCNMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCNMeViewController.h; sourceTree = "<group>"; };
+		495DA8841DB67E46000683C0 /* OCNMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCNMeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +98,7 @@
 				495DA85C1DB679EB000683C0 /* News */,
 				495DA85B1DB679EB000683C0 /* Media */,
 				495DA8591DB679EB000683C0 /* Bar */,
-				495DA85A1DB679EB000683C0 /* me */,
+				495DA8811DB67E27000683C0 /* Me */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -94,20 +106,15 @@
 		495DA8591DB679EB000683C0 /* Bar */ = {
 			isa = PBXGroup;
 			children = (
+				495DA8761DB67D38000683C0 /* Controllers */,
 			);
 			path = Bar;
-			sourceTree = "<group>";
-		};
-		495DA85A1DB679EB000683C0 /* me */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = me;
 			sourceTree = "<group>";
 		};
 		495DA85B1DB679EB000683C0 /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				495DA8751DB67D20000683C0 /* Controllers */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -115,6 +122,7 @@
 		495DA85C1DB679EB000683C0 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				495DA8741DB67D1A000683C0 /* Controllers */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -153,6 +161,50 @@
 				495DA8701DB67BC6000683C0 /* AppDelegate.m */,
 			);
 			path = Others;
+			sourceTree = "<group>";
+		};
+		495DA8741DB67D1A000683C0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				495DA8781DB67DE2000683C0 /* OCNNewsViewController.h */,
+				495DA8791DB67DE2000683C0 /* OCNNewsViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		495DA8751DB67D20000683C0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				495DA87B1DB67DEF000683C0 /* OCNMediaViewController.h */,
+				495DA87C1DB67DEF000683C0 /* OCNMediaViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		495DA8761DB67D38000683C0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				495DA87E1DB67DF7000683C0 /* OCNBarViewController.h */,
+				495DA87F1DB67DF7000683C0 /* OCNBarViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		495DA8811DB67E27000683C0 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				495DA8821DB67E27000683C0 /* Controllers */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		495DA8821DB67E27000683C0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				495DA8831DB67E46000683C0 /* OCNMeViewController.h */,
+				495DA8841DB67E46000683C0 /* OCNMeViewController.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,7 +278,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495DA87D1DB67DEF000683C0 /* OCNMediaViewController.m in Sources */,
+				495DA8851DB67E46000683C0 /* OCNMeViewController.m in Sources */,
 				495DA8731DB67BC6000683C0 /* AppDelegate.m in Sources */,
+				495DA87A1DB67DE2000683C0 /* OCNNewsViewController.m in Sources */,
+				495DA8801DB67DF7000683C0 /* OCNBarViewController.m in Sources */,
 				495DA8431DB673C9000683C0 /* main.m in Sources */,
 				495DA8711DB67BC6000683C0 /* OCNMainNavigationController.m in Sources */,
 				495DA8721DB67BC6000683C0 /* OCNMainTabBarController.m in Sources */,

@@ -8,30 +8,34 @@
 
 #import "OCNMainNavigationController.h"
 
+
 @interface OCNMainNavigationController ()
 
 @end
+
 
 @implementation OCNMainNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self setupUI];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - Set up user interface
+- (void)setupUI {
+    //取消navigationBar下分界线
+    self.navigationBar.translucent = NO;
+    //设置navigationBar的颜色
+    self.navigationBar.barTintColor = [UIColor redColor];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+//解决push到子控制器时tabbar不隐藏的问题
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    if (self.viewControllers.count > 0) {
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
+    [super pushViewController:viewController animated:animated];
 }
-*/
 
 @end

@@ -1,5 +1,5 @@
 //
-//  OCNMainNavigationController.h
+//  OCNMeViewController.h
 //  OCNews
 //
 //  Created by 吕成翘 on 16/10/18.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
-@interface OCNMainNavigationController : UINavigationController
+@interface OCNMeViewController : UIViewController
 
 @end
