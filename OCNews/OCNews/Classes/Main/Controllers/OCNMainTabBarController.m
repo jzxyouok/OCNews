@@ -28,9 +28,9 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     OCNMainNavigationController *newsNavigationController = [self navigationControllerWithClassName:@"OCNNewsViewController" title:@"新闻" imageName:@"news"];
-    OCNMainNavigationController *mediaNavigationController = [self navigationControllerWithClassName:@"OCNNewsViewController" title:@"直播" imageName:@"media"];
-    OCNMainNavigationController *barNavigationController = [self navigationControllerWithClassName:@"OCNNewsViewController" title:@"话题" imageName:@"bar"];
-    OCNMainNavigationController *meNavigationController = [self navigationControllerWithClassName:@"OCNNewsViewController" title:@"我" imageName:@"me"];
+    OCNMainNavigationController *mediaNavigationController = [self navigationControllerWithClassName:@"OCNMediaViewController" title:@"直播" imageName:@"media"];
+    OCNMainNavigationController *barNavigationController = [self navigationControllerWithClassName:@"OCNBarViewController" title:@"话题" imageName:@"bar"];
+    OCNMainNavigationController *meNavigationController = [self navigationControllerWithClassName:@"OCNMeViewController" title:@"我" imageName:@"me"];
     
     self.viewControllers = @[newsNavigationController, mediaNavigationController, barNavigationController, meNavigationController];
 }

@@ -18,6 +18,10 @@
 		495DA87D1DB67DEF000683C0 /* OCNMediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495DA87C1DB67DEF000683C0 /* OCNMediaViewController.m */; };
 		495DA8801DB67DF7000683C0 /* OCNBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495DA87F1DB67DF7000683C0 /* OCNBarViewController.m */; };
 		495DA8851DB67E46000683C0 /* OCNMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495DA8841DB67E46000683C0 /* OCNMeViewController.m */; };
+		49B50B411DB7D0ED008D65CE /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B50B401DB7D0ED008D65CE /* UIColor+Addition.m */; };
+		49B50B451DB7D4F1008D65CE /* OCNNewsFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B50B441DB7D4F1008D65CE /* OCNNewsFlowLayout.m */; };
+		49FB73171DB6937F0091D729 /* UIBarButtonItem+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FB73161DB6937F0091D729 /* UIBarButtonItem+Addition.m */; };
+		49FB731A1DB6995C0091D729 /* UILabel+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FB73191DB6995C0091D729 /* UILabel+Addition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,15 @@
 		495DA87F1DB67DF7000683C0 /* OCNBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCNBarViewController.m; sourceTree = "<group>"; };
 		495DA8831DB67E46000683C0 /* OCNMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCNMeViewController.h; sourceTree = "<group>"; };
 		495DA8841DB67E46000683C0 /* OCNMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCNMeViewController.m; sourceTree = "<group>"; };
+		49B50B3F1DB7D0ED008D65CE /* UIColor+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Addition.h"; sourceTree = "<group>"; };
+		49B50B401DB7D0ED008D65CE /* UIColor+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Addition.m"; sourceTree = "<group>"; };
+		49B50B431DB7D4F1008D65CE /* OCNNewsFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCNNewsFlowLayout.h; sourceTree = "<group>"; };
+		49B50B441DB7D4F1008D65CE /* OCNNewsFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCNNewsFlowLayout.m; sourceTree = "<group>"; };
+		49FB73141DB693310091D729 /* OCNAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCNAdditions.h; sourceTree = "<group>"; };
+		49FB73151DB6937F0091D729 /* UIBarButtonItem+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Addition.h"; sourceTree = "<group>"; };
+		49FB73161DB6937F0091D729 /* UIBarButtonItem+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Addition.m"; sourceTree = "<group>"; };
+		49FB73181DB6995C0091D729 /* UILabel+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Addition.h"; sourceTree = "<group>"; };
+		49FB73191DB6995C0091D729 /* UILabel+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Addition.m"; sourceTree = "<group>"; };
 		4F8F55DF01B4018E416FC28D /* Pods-OCNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCNews/Pods-OCNews.debug.xcconfig"; sourceTree = "<group>"; };
 		E2DB8B1B266E4EDCCBB38C22 /* libPods-OCNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -138,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				495DA8741DB67D1A000683C0 /* Controllers */,
+				49B50B421DB7D4A4008D65CE /* Views */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -145,6 +159,7 @@
 		495DA85D1DB679EB000683C0 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				49FB73131DB692D20091D729 /* Additions */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -220,6 +235,29 @@
 				495DA8841DB67E46000683C0 /* OCNMeViewController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		49B50B421DB7D4A4008D65CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49B50B431DB7D4F1008D65CE /* OCNNewsFlowLayout.h */,
+				49B50B441DB7D4F1008D65CE /* OCNNewsFlowLayout.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		49FB73131DB692D20091D729 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				49FB73141DB693310091D729 /* OCNAdditions.h */,
+				49FB73151DB6937F0091D729 /* UIBarButtonItem+Addition.h */,
+				49FB73161DB6937F0091D729 /* UIBarButtonItem+Addition.m */,
+				49FB73181DB6995C0091D729 /* UILabel+Addition.h */,
+				49FB73191DB6995C0091D729 /* UILabel+Addition.m */,
+				49B50B3F1DB7D0ED008D65CE /* UIColor+Addition.h */,
+				49B50B401DB7D0ED008D65CE /* UIColor+Addition.m */,
+			);
+			path = Additions;
 			sourceTree = "<group>";
 		};
 		D5B0E17A2376AC6A4D547F4D /* Pods */ = {
@@ -354,12 +392,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				495DA87D1DB67DEF000683C0 /* OCNMediaViewController.m in Sources */,
+				49FB73171DB6937F0091D729 /* UIBarButtonItem+Addition.m in Sources */,
 				495DA8851DB67E46000683C0 /* OCNMeViewController.m in Sources */,
 				495DA8731DB67BC6000683C0 /* AppDelegate.m in Sources */,
 				495DA87A1DB67DE2000683C0 /* OCNNewsViewController.m in Sources */,
 				495DA8801DB67DF7000683C0 /* OCNBarViewController.m in Sources */,
 				495DA8431DB673C9000683C0 /* main.m in Sources */,
 				495DA8711DB67BC6000683C0 /* OCNMainNavigationController.m in Sources */,
+				49B50B411DB7D0ED008D65CE /* UIColor+Addition.m in Sources */,
+				49B50B451DB7D4F1008D65CE /* OCNNewsFlowLayout.m in Sources */,
+				49FB731A1DB6995C0091D729 /* UILabel+Addition.m in Sources */,
 				495DA8721DB67BC6000683C0 /* OCNMainTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
